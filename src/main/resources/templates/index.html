@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>프로젝트 공유 포럼</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #212529;
+      color: white;
+      margin: 0;
+    }
+
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      height: 50px;
+    }
+
+    .main {
+      background-color: #333;
+      padding: 20px;
+      height: 1000px;
+    }
+
+
+    .sidebar {
+      background-color: #ccc;
+      width: 200px;
+      height: 1000px;
+      float: left;
+      padding: 20px;
+    }
+
+    .content {
+      margin-left: 220px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      margin: 20px 0;
+    }
+
+    .gallery img {
+      max-width: 100%;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      /*position:absolute;*/
+      /*bottom: 0;*/
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <h2>목차</h2>
+    <ul>
+      <li><a href="#">Showcase</a></li>
+      <li><a href="#">Community</a></li>
+      <li><a href="#">갤러리</a></li>
+    </ul>
+  </aside>
+  <main class="main">
+    <h1>Showcase</h1>
+    <ul>
+      <li><a href="#">프로젝트 1</a></li>
+      <li><a href="#">프로젝트 2</a></li>
+      <li><a href="#">프로젝트 3</a></li>
+    </ul>
+    <div class="gallery">
+      <img src="t2.jpeg" alt="프로젝트 1">
+      <img src="image2.jpg" alt="프로젝트 2">
+      <img src="image3.jpg" alt="프로젝트 3">
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Copyright © 2023 프로젝트 공유 포럼</p>
+  </footer>
+</div>
+</body>
+</html>
